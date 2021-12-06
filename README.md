@@ -79,7 +79,11 @@ terraform destroy
 
 ## Result 
 
-Once the script has been executed successfully, you may access the WordPress site to complete the installation using the IP address of the webserver instance created. The installation can be completed by giving the database details in WordPress. 
+Once the script has been executed successfully, you may access the WordPress site to complete the installation using the IP address of the webserver instance created. The IP addresses of the instances will be displayed in the output section after the execution of the script.
+
+![image](https://user-images.githubusercontent.com/93197553/144852981-945a13ed-5359-4834-83e8-f67d95b1f4b4.png)
+
+The installation can be completed by giving the database details in WordPress. 
 
 ![1 1](https://user-images.githubusercontent.com/93197553/144802139-6bc7e061-2bb1-4209-8286-66c56fb29b5b.PNG)
 
