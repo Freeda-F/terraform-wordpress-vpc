@@ -1,4 +1,4 @@
-# creation of jumpserver in public2
+# creation of bastion in public2
 resource "aws_instance" "bastion" {
   ami           = var.ami
   instance_type = var.type
