@@ -1,5 +1,5 @@
 provider "aws" {
   region     = var.region
-  access_key = var.access_key
-  secret_key = var.secret_key
+  access_key = "Enter access key here"
+  secret_key = "Enter secret key here"
 }
