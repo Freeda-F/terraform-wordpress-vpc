@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sudo -i
 yum install httpd git -y
 systemctl restart httpd
