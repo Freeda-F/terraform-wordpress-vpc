@@ -1,4 +1,4 @@
-####### security group creation - bastion server ######
+####### security group creation - bastion server #######
 resource "aws_security_group" "bastion" {
   name        = "bastion-sg"
   description = "allow 22 from all IPs"
