@@ -27,7 +27,7 @@ variable "key" {
 
 variable "access_key" {
 
-  default = "enter access-keyID here"
+  default = "enter access-key here"
   
 }
 
