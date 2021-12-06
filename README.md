@@ -38,7 +38,7 @@ variable "region" {
   default = "us-east-2" #provide your required region here instead of us-east-2
 }
 ```
-2. The environment vaiables has to be set in file provider.tf : access_key and secret_key
+2. Also, the vaiables has to be set in file variables.tf : access_key and secret_key
 
 3. The file set-mysql.sh contains the mysql root password, database-name, database-username and password which can be modified if required. If not modified, MySQL will be spinned up the EC2 instance using the parameters defined in the file (Optional step).
 ```
