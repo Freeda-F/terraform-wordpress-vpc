@@ -38,7 +38,9 @@ variable "region" {
   default = "us-east-2" #provide your required region here instead of us-east-2
 }
 ```
-2. The file set-mysql.sh contains the mysql root password, database-name, database-username and password which can be modified if required. If not modified, MySQL will be spinned up the EC2 instance using the parameters defined in the file (Optional step).
+2. The environment vaiables has to be set in file provider.tf : access_key and secret_key
+
+3. The file set-mysql.sh contains the mysql root password, database-name, database-username and password which can be modified if required. If not modified, MySQL will be spinned up the EC2 instance using the parameters defined in the file (Optional step).
 ```
 #!/bin/bash
 
@@ -56,7 +58,7 @@ FLUSH PRIVILEGES;"
 sudo /sbin/service mariadb restart
 ```
 
-## provisioning:
+## Provisioning:
 
 1. Navigate to the project directory where the files are to be installed and execute the below commands.
 
@@ -68,7 +70,7 @@ $ terraform plan
 $ terraform apply
 ```
 
-## Destroying the Infra:
+## Destroying the Infrastructure:
 
 If you require to remove all the created resources using terraform, use the command below.
 ```
@@ -79,10 +81,12 @@ terraform destroy
 
 Once the script has been executed successfully, you may access the WordPress site to complete the installation using the IP address of the webserver instance created. The installation can be completed by giving the database details in WordPress. 
 
+![1 1](https://user-images.githubusercontent.com/93197553/144802139-6bc7e061-2bb1-4209-8286-66c56fb29b5b.PNG)
 
 
-After giving the the correct DB credentials, you will get the ready to install page. You may click on 'Run the installation' to complete it.
+After giving the the correct DB credentials, you will get the ready to install page. You may click on 'Run the installation' to complete it. In the next step, you may configure the WP website login credentials and other details.
 
+![5](https://user-images.githubusercontent.com/93197553/144802256-07ccd087-cf33-4277-a981-2655d12327da.PNG)
 
-
+![1 2](https://user-images.githubusercontent.com/93197553/144802195-77ecc0d4-d8b6-4dcc-8866-00cc532bce58.PNG)
 
