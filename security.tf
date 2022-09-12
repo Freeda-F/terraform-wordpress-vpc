@@ -2,7 +2,7 @@
 resource "aws_security_group" "bastion" {
   name        = "bastion-sg"
   description = "allow 22 from all IPs"
-  vpc_id      = aws_vpc.vpc.id
+  vpc_id      = aws_vpc.vpc.id.id
 
   ingress {
     description      = ""
