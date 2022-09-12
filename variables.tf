@@ -18,7 +18,7 @@ variable "ami" {
 }
 
 variable "type" {
-  default = "t2.micro"
+  default = "xt2.micro"
 }
 
 variable "key" {
