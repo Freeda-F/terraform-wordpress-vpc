@@ -28,7 +28,7 @@ resource "aws_internet_gateway" "igw" {
 ### availablity zone ###
 
 data "aws_availability_zones" "az" {
-  state = "available"
+  state = available
 }
 
 ### Subet creation -public1 ###
